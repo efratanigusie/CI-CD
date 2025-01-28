@@ -1,6 +1,9 @@
+import sys
+import os
 import unittest
-from main import add, subtract, multiply, divide
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
+from main import add, subtract, multiply, divide
 class TestCalculator(unittest.TestCase):
     def test_add(self):
         self.assertEqual(add(2, 3), 5)
