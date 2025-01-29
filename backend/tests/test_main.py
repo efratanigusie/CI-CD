@@ -1,5 +1,5 @@
 import unittest
-from main import add, subtract, multiply, divide
+from backend.main import add, subtract, multiply, divide
 class TestCalculator(unittest.TestCase):
     def test_add(self):
         self.assertEqual(add(2, 3), 5)
